@@ -39,7 +39,7 @@ export const readOutLoud = (message) => {
     // }
     else if (message.includes("open")) {
         speak("Opening " + message.replace("open", ""));
-        window.open(`https://www.${message.replace("open", "").replace(" ", "")}com/`, "_blank");
+        window.open(`https://www.${message.replace("open", "").replace(" ", "")}.com/`, "_blank");
     }
     else if (message.includes("open calculator")) {
         speak("Opening Calculator");
